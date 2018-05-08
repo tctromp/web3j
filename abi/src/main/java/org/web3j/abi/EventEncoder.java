@@ -24,7 +24,7 @@ public class EventEncoder {
         List<TypeReference<Type>> nonIndexedParameters = function.getNonIndexedParameters();
 
         String methodSignature = buildMethodSignature(function.getName(),
-                indexedParameters, nonIndexedParameters);
+                nonIndexedParameters, indexedParameters);
 
         return buildEventSignature(methodSignature);
     }
